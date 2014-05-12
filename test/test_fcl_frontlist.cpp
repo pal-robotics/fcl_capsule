@@ -38,12 +38,12 @@
 #define BOOST_TEST_MODULE "FCL_FRONT_LIST"
 #include <boost/test/unit_test.hpp>
 
-#include "fcl/traversal/traversal_node_bvhs.h"
-#include "fcl/traversal/traversal_node_setup.h"
-#include "fcl/collision_node.h"
+#include "fcl_capsule/traversal/traversal_node_bvhs.h"
+#include "fcl_capsule/traversal/traversal_node_setup.h"
+#include "fcl_capsule/collision_node.h"
 #include "test_fcl_utility.h"
 
-#include "fcl_resources/config.h"
+#include "fcl_capsule_resources/config.h"
 #include <boost/filesystem.hpp>
 
 using namespace fcl;

@@ -34,8 +34,8 @@
 
 /** \author Dalibor Matura, Jia Pan */
 
-#include "fcl/ccd/interpolation/interpolation_factory.h"
-#include "fcl/ccd/interpolation/interpolation_linear.h"
+#include "fcl_capsule/ccd/interpolation/interpolation_factory.h"
+#include "fcl_capsule/ccd/interpolation/interpolation_linear.h"
 
 #include <boost/assert.hpp>
 

@@ -1,10 +1,17 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(fcl_capsule)
 
-string(REPLACE "-Werror=uninitialized" "" CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS})
+#if (DEFINED CMAKE_CXX_FLAGS)
+#   message("cmake cxx flags found")
+#   string(REPLACE "-Werror=uninitialized" "" CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS})
+#else ()
+#   message("CMAKE FLAGS ARE NOT FOUND!")
+#endif()
 
+string(REPLACE "-Werror=uninitialized" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 
 find_package(catkin REQUIRED)
+find_package(octomap REQUIRED)
 
 ###################################
 ## catkin specific configuration ##
@@ -94,39 +101,41 @@ if(PKG_CONFIG_FOUND)
 endif()
 
 if(NOT CCD_FOUND)
-    message("FSAJDSIOAJDASOIDJAS:::: PKGCONFIG not found CCD")
-    # if pkfconfig is not installed, then fall back on more fragile detection
-    # of ccd
-    find_path(CCD_INCLUDE_DIRS ccd.h
-        PATH_SUFFIXES ccd)
-    find_path(CCD_LIBRARY_DIRS
-        ${CMAKE_SHARED_LIBRARY_PREFIX}ccd${CMAKE_SHARED_LIBRARY_SUFFIX})
-    if(CCD_INCLUDE_DIRS AND CCD_LIBRARY_DIRS)
-        set(CCD_LIBRARIES "ccd")
-    else()
-        message(FATAL_ERROR "Libccd is required by FCL")
-    endif()
+  message(FATAL_ERROR "Libccd is required by FCL")
 endif()
-#set(ccd_LIBRARY ${CCD_LIBRARY_DIRS}
 
-message("CCD_LIBRARY_DIRS ${CCD_LIBRARY_DIRS}")
+set(libs "")
+foreach(libr "${CCD_LIBRARIES}")
+  set(lib "${libr}-NOTFOUND")
+  find_library(lib ${libr}
+    PATHS "${CCD_LIBRARY_DIRS}"
+    NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+  if(lib)
+    list(APPEND libs ${lib})
+  else()
+    find_library(lib ${libr})
+    if(lib)
+      list(APPEND libs ${lib})
+    endif()
+  endif()
+endforeach()
+
+set(CCD_LIBRARIES ${libs})
 
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES fcl_capsule
-  CATKIN_DEPENDS octomap
-  DEPENDS libccd
+  DEPENDS CCD OCTOMAP
 )
 
 include_directories(${CCD_INCLUDE_DIRS})
-message("llllllllllllll ${CCD_LIBRARY_DIRS}")
-link_directories(${CCD_LIBRARY_DIRS})
+include_directories(${OCTOMAP_INCLUDE_DIRS})
 
-add_subdirectory(include/fcl)
+add_subdirectory(include/fcl_capsule)
 add_subdirectory(src)
 
 set(pkg_conf_file "${CMAKE_CURRENT_SOURCE_DIR}/fcl_capsule.pc")
-configure_file("${pkg_conf_file}.in" "${pkg_conf_file}" @ONLY)
+	configure_file("${pkg_conf_file}.in" "${pkg_conf_file}" @ONLY)
 
 install(DIRECTORY include/ DESTINATION include
   FILES_MATCHING PATTERN "*.h" PATTERN "*.hxx"

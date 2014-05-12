@@ -34,7 +34,7 @@
 
 /** \author Jia Pan */
 
-#include "fcl/ccd/interval_matrix.h"
+#include "fcl_capsule/ccd/interval_matrix.h"
 #include <iostream>
 
 namespace fcl

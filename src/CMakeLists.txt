@@ -5,6 +5,6 @@ else()
   add_library(${PROJECT_NAME} SHARED ${FCL_SOURCE_CODE})
 endif()
 
-target_link_libraries(${PROJECT_NAME} ${CCD_LIBRARIES} ${OCTOMAP_LIBRARIES} ${Boost_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${OCTOMAP_LIBRARIES} ${CCD_LIBRARIES} ${Boost_LIBRARIES} ${catkin_LIBRARIES})
 
 install(TARGETS ${PROJECT_NAME} ARCHIVE DESTINATION lib/ LIBRARY DESTINATION lib/)

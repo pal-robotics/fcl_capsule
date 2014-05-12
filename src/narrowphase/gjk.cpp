@@ -34,8 +34,8 @@
 
 /** \author Jia Pan */
 
-#include "fcl/narrowphase/gjk.h"
-#include "fcl/intersect.h"
+#include "fcl_capsule/narrowphase/gjk.h"
+#include "fcl_capsule/intersect.h"
 
 namespace fcl
 {

@@ -34,8 +34,8 @@
 
 /** \author Jia Pan */
 
-#include "fcl/BVH/BVH_model.h"
-#include "fcl/BV/BV.h"
+#include "fcl_capsule/BVH/BVH_model.h"
+#include "fcl_capsule/BV/BV.h"
 #include <iostream>
 #include <string.h>
 

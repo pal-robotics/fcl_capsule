@@ -37,15 +37,15 @@
 #define BOOST_TEST_MODULE "FCL_COLLISION"
 #include <boost/test/unit_test.hpp>
 
-#include "fcl/traversal/traversal_node_bvhs.h"
-#include "fcl/traversal/traversal_node_setup.h"
-#include "fcl/collision_node.h"
-#include "fcl/collision.h"
-#include "fcl/BV/BV.h"
-#include "fcl/shape/geometric_shapes.h"
-#include "fcl/narrowphase/narrowphase.h"
+#include "fcl_capsule/traversal/traversal_node_bvhs.h"
+#include "fcl_capsule/traversal/traversal_node_setup.h"
+#include "fcl_capsule/collision_node.h"
+#include "fcl_capsule/collision.h"
+#include "fcl_capsule/BV/BV.h"
+#include "fcl_capsule/shape/geometric_shapes.h"
+#include "fcl_capsule/narrowphase/narrowphase.h"
 #include "test_fcl_utility.h"
-#include "fcl_resources/config.h"
+#include "fcl_capsule_resources/config.h"
 #include <boost/filesystem.hpp>
 
 using namespace fcl;

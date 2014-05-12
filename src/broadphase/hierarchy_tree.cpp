@@ -34,7 +34,7 @@
 
 /** \author Jia Pan */
 
-#include "fcl/broadphase/hierarchy_tree.h"
+#include "fcl_capsule/broadphase/hierarchy_tree.h"
 
 namespace fcl
 {

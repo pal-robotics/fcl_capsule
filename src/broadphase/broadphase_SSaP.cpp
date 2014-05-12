@@ -34,7 +34,7 @@
 
 /** \author Jia Pan */
 
-#include "fcl/broadphase/broadphase_SSaP.h"
+#include "fcl_capsule/broadphase/broadphase_SSaP.h"
 #include <algorithm>
 #include <limits>
 

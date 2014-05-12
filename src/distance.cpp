@@ -34,9 +34,9 @@
 
 /** \author Jia Pan */
 
-#include "fcl/distance.h"
-#include "fcl/distance_func_matrix.h"
-#include "fcl/narrowphase/narrowphase.h"
+#include "fcl_capsule/distance.h"
+#include "fcl_capsule/distance_func_matrix.h"
+#include "fcl_capsule/narrowphase/narrowphase.h"
 
 #include <iostream>
 

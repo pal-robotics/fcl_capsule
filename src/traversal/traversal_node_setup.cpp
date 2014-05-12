@@ -35,7 +35,7 @@
 /** \author Jia Pan */
 
 
-#include "fcl/traversal/traversal_node_setup.h"
+#include "fcl_capsule/traversal/traversal_node_setup.h"
 
 namespace fcl
 {

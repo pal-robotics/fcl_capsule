@@ -37,12 +37,12 @@
 #include <boost/test/unit_test.hpp>
 
 #if FCL_HAVE_SSE
-  #include "fcl/simd/math_simd_details.h"
+  #include "fcl_capsule/simd/math_simd_details.h"
 #endif
-#include "fcl/math/vec_3f.h"
-#include "fcl/math/matrix_3f.h"
-#include "fcl/broadphase/morton.h"
-#include "fcl/config.h"
+#include "fcl_capsule/math/vec_3f.h"
+#include "fcl_capsule/math/matrix_3f.h"
+#include "fcl_capsule/broadphase/morton.h"
+#include "fcl_capsule/config.h"
 
 using namespace fcl;
 

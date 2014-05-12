@@ -35,9 +35,9 @@
 /** \author Jia Pan */
 
 
-#include "fcl/collision.h"
-#include "fcl/collision_func_matrix.h"
-#include "fcl/narrowphase/narrowphase.h"
+#include "fcl_capsule/collision.h"
+#include "fcl_capsule/collision_func_matrix.h"
+#include "fcl_capsule/narrowphase/narrowphase.h"
 
 #include <iostream>
 

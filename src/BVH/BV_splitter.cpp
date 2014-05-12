@@ -34,7 +34,7 @@
 
 /** \author Jia Pan */
 
-#include "fcl/BVH/BV_splitter.h"
+#include "fcl_capsule/BVH/BV_splitter.h"
 
 namespace fcl
 {

@@ -35,7 +35,7 @@
 
 /** \author Ioan Sucan */
 
-#include "fcl/profile.h"
+#include "fcl_capsule/profile.h"
 
 
 fcl::tools::Profiler& fcl::tools::Profiler::Instance(void)

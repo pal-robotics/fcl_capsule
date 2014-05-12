@@ -34,7 +34,7 @@
 
 /** \author Dalibor Matura, Jia Pan */
 
-#include "fcl/ccd/interpolation/interpolation.h"
+#include "fcl_capsule/ccd/interpolation/interpolation.h"
 
 namespace fcl 
 {

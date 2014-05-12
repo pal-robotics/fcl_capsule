@@ -1,11 +1,11 @@
-#include "fcl/collision.h"
-#include "fcl/continuous_collision.h"
-#include "fcl/ccd/motion.h"
-#include "fcl/BVH/BVH_model.h"
-#include "fcl/traversal/traversal_node_bvhs.h"
-#include "fcl/traversal/traversal_node_setup.h"
-#include "fcl/collision_node.h"
-#include "fcl/ccd/conservative_advancement.h"
+#include "fcl_capsule/collision.h"
+#include "fcl_capsule/continuous_collision.h"
+#include "fcl_capsule/ccd/motion.h"
+#include "fcl_capsule/BVH/BVH_model.h"
+#include "fcl_capsule/traversal/traversal_node_bvhs.h"
+#include "fcl_capsule/traversal/traversal_node_setup.h"
+#include "fcl_capsule/collision_node.h"
+#include "fcl_capsule/ccd/conservative_advancement.h"
 #include <iostream>
 
 namespace fcl

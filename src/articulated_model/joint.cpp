@@ -34,9 +34,9 @@
 
 /** \author Dalibor Matura, Jia Pan */
 
-#include "fcl/articulated_model/joint.h"
-#include "fcl/articulated_model/link.h"
-#include "fcl/articulated_model/joint_config.h"
+#include "fcl_capsule/articulated_model/joint.h"
+#include "fcl_capsule/articulated_model/link.h"
+#include "fcl_capsule/articulated_model/joint_config.h"
 
 namespace fcl
 {

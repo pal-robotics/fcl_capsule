@@ -35,8 +35,8 @@
 /** \author Jia Pan */
 
 
-#include "fcl/shape/geometric_shapes_utility.h"
-#include "fcl/BVH/BV_fitter.h"
+#include "fcl_capsule/shape/geometric_shapes_utility.h"
+#include "fcl_capsule/BVH/BV_fitter.h"
 
 namespace fcl
 {

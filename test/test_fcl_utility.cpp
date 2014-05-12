@@ -1,7 +1,7 @@
 #include "test_fcl_utility.h"
-#include "fcl/collision.h"
-#include "fcl/continuous_collision.h"
-#include "fcl/distance.h"
+#include "fcl_capsule/collision.h"
+#include "fcl_capsule/continuous_collision.h"
+#include "fcl_capsule/distance.h"
 #include <cstdio>
 #include <cstddef>
 #include <fstream>

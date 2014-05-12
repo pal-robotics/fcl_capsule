@@ -34,7 +34,7 @@
 
 /** \author Jia Pan */
 
-#include "fcl/BV/kDOP.h"
+#include "fcl_capsule/BV/kDOP.h"
 #include <limits>
 #include <iostream>
 

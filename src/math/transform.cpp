@@ -35,7 +35,7 @@
 /** \author Jia Pan */
 
 
-#include "fcl/math/transform.h"
+#include "fcl_capsule/math/transform.h"
 #include <boost/math/constants/constants.hpp>
 
 namespace fcl

@@ -34,10 +34,10 @@
 
 /** \author Jia Pan */
 
-#include "fcl/broadphase/broadphase_dynamic_AABB_tree_array.h"
+#include "fcl_capsule/broadphase/broadphase_dynamic_AABB_tree_array.h"
 
 #if FCL_HAVE_OCTOMAP
-#include "fcl/octree.h"
+#include "fcl_capsule/octree.h"
 #endif
 
 namespace fcl
