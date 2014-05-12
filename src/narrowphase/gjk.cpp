@@ -37,7 +37,7 @@
 #include "fcl_capsule/narrowphase/gjk.h"
 #include "fcl_capsule/intersect.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 namespace details

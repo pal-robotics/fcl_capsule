@@ -38,7 +38,7 @@
 #include "fcl_capsule/traversal/traversal_node_base.h"
 #include <limits>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 TraversalNodeBase::~TraversalNodeBase()

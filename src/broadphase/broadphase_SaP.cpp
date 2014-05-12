@@ -39,7 +39,7 @@
 #include <limits>
 #include <boost/bind.hpp>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 void SaPCollisionManager::unregisterObject(CollisionObject* obj)

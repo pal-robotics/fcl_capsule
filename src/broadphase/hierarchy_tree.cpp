@@ -36,7 +36,7 @@
 
 #include "fcl_capsule/broadphase/hierarchy_tree.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 template<>

@@ -49,7 +49,7 @@
 #endif
 
 
-namespace fcl
+namespace fcl_capsule
 {
 
 class Timer

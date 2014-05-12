@@ -44,7 +44,7 @@
 #include "fcl_capsule/broadphase/morton.h"
 #include "fcl_capsule/config.h"
 
-using namespace fcl;
+using namespace fcl_capsule;
 
 BOOST_AUTO_TEST_CASE(vec_test_basic_vec32)
 {

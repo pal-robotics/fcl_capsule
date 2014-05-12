@@ -53,7 +53,7 @@
 #include <iostream>
 #include <iomanip>
 
-using namespace fcl;
+using namespace fcl_capsule;
 
 struct TStruct
 {

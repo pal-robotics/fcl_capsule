@@ -36,7 +36,7 @@
 
 #include "fcl_capsule/BVH/BV_splitter.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 

@@ -36,7 +36,7 @@
 
 #include "fcl_capsule/BV/OBBRSS.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 bool overlap(const Matrix3f& R0, const Vec3f& T0, const OBBRSS& b1, const OBBRSS& b2)

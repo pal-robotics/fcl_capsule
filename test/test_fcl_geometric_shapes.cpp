@@ -44,7 +44,7 @@
 #include "fcl_capsule/ccd/motion.h"
 #include <iostream>
 
-using namespace fcl;
+using namespace fcl_capsule;
 
 FCL_REAL extents [6] = {0, 0, 0, 10, 10, 10};
 

@@ -40,7 +40,7 @@
 #include <vector>
 #include <boost/math/special_functions/fpclassify.hpp>
 
-namespace fcl
+namespace fcl_capsule
 {
 const FCL_REAL PolySolver::NEAR_ZERO_THRESHOLD = 1e-9;
 

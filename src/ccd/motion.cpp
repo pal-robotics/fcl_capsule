@@ -37,7 +37,7 @@
 
 #include "fcl_capsule/ccd/motion.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 template<>

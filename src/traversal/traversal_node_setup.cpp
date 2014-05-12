@@ -37,7 +37,7 @@
 
 #include "fcl_capsule/traversal/traversal_node_setup.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 

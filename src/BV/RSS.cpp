@@ -37,7 +37,7 @@
 #include "fcl_capsule/BV/RSS.h"
 #include "fcl_capsule/BVH/BVH_utility.h"
 #include <iostream>
-namespace fcl
+namespace fcl_capsule
 {
 
 /// @brief Clip value between a and b

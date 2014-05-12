@@ -40,7 +40,7 @@
 #include <ccd/vec3.h>
 #include <ccd/ccd.h>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 namespace details

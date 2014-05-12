@@ -38,7 +38,7 @@
 #include "fcl_capsule/articulated_model/link.h"
 #include "fcl_capsule/articulated_model/joint_config.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 Joint::Joint(const boost::shared_ptr<Link>& link_parent, const boost::shared_ptr<Link>& link_child,

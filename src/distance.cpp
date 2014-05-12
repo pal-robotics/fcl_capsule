@@ -40,7 +40,7 @@
 
 #include <iostream>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 template<typename GJKSolver>

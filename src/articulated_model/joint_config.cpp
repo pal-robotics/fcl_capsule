@@ -37,7 +37,7 @@
 #include "fcl_capsule/articulated_model/joint_config.h"
 #include "fcl_capsule/articulated_model/joint.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 JointConfig::JointConfig() {}

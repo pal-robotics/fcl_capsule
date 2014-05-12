@@ -39,7 +39,7 @@
 #include <iostream>
 #include <string.h>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 template<typename BV>

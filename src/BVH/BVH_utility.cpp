@@ -37,7 +37,7 @@
 
 #include "fcl_capsule/BVH/BVH_utility.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 void BVHExpand(BVHModel<OBB>& model, const Variance3f* ucs, FCL_REAL r = 1.0)

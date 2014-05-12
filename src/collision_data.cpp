@@ -36,7 +36,7 @@
 
 #include "fcl_capsule/collision_data.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 bool CollisionRequest::isSatisfied(const CollisionResult& result) const

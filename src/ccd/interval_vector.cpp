@@ -37,7 +37,7 @@
 #include "fcl_capsule/ccd/interval_vector.h"
 #include <iostream>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 

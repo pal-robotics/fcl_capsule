@@ -45,7 +45,7 @@
 #include "fcl_capsule_resources/config.h"
 #include <boost/filesystem.hpp>
 
-using namespace fcl;
+using namespace fcl_capsule;
 
 bool verbose = false;
 FCL_REAL DELTA = 0.001;

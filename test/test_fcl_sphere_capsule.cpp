@@ -45,7 +45,7 @@
 #define M_PI 3.14159265358979323846
 #endif
 
-using namespace fcl;
+using namespace fcl_capsule;
 
 BOOST_AUTO_TEST_CASE(Sphere_Capsule_Intersect_test_separated_z)
 {

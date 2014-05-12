@@ -37,7 +37,7 @@
 #include "fcl_capsule/ccd/interval.h"
 #include <iostream>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 Interval bound(const Interval& i, FCL_REAL v)

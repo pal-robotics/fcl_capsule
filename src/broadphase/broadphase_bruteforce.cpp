@@ -37,7 +37,7 @@
 #include "fcl_capsule/broadphase/broadphase_bruteforce.h"
 #include <limits>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 void NaiveCollisionManager::registerObjects(const std::vector<CollisionObject*>& other_objs)

@@ -37,7 +37,7 @@
 #include "fcl_capsule/ccd/interval_matrix.h"
 #include <iostream>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 IMatrix3::IMatrix3() {}

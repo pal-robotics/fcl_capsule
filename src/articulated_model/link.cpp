@@ -38,7 +38,7 @@
 
 #include "fcl_capsule/articulated_model/joint.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 Link::Link(const std::string& name) : name_(name)

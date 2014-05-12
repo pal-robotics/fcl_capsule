@@ -36,7 +36,7 @@
 
 #include "fcl_capsule/ccd/taylor_matrix.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 TMatrix3::TMatrix3()

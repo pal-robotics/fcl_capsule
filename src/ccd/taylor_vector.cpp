@@ -36,7 +36,7 @@
 
 #include "fcl_capsule/ccd/taylor_vector.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 TVector3::TVector3()

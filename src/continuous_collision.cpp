@@ -8,7 +8,7 @@
 #include "fcl_capsule/ccd/conservative_advancement.h"
 #include <iostream>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 template<typename GJKSolver>

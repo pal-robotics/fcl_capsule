@@ -42,7 +42,7 @@
 #include "fcl_capsule/narrowphase/narrowphase.h"
 
 
-namespace fcl
+namespace fcl_capsule
 {
 
 #if FCL_HAVE_OCTOMAP
@@ -243,7 +243,7 @@ struct BVHShapeCollider
       const T_SH* obj2 = static_cast<const T_SH*>(o2);
 
       initialize(node, *obj1_tmp, tf1_tmp, *obj2, tf2, nsolver, no_cost_request, result);
-      fcl::collide(&node);
+      fcl_capsule::collide(&node);
 
       delete obj1_tmp;
 
@@ -267,7 +267,7 @@ struct BVHShapeCollider
       const T_SH* obj2 = static_cast<const T_SH*>(o2);
 
       initialize(node, *obj1_tmp, tf1_tmp, *obj2, tf2, nsolver, request, result);
-      fcl::collide(&node);
+      fcl_capsule::collide(&node);
 
       delete obj1_tmp;
     }
@@ -296,7 +296,7 @@ std::size_t orientedBVHShapeCollide(const CollisionGeometry* o1, const Transform
     const T_SH* obj2 = static_cast<const T_SH*>(o2);
 
     initialize(node, *obj1, tf1, *obj2, tf2, nsolver, no_cost_request, result);
-    fcl::collide(&node);
+    fcl_capsule::collide(&node);
    
     Box box;
     Transform3f box_tf;
@@ -316,7 +316,7 @@ std::size_t orientedBVHShapeCollide(const CollisionGeometry* o1, const Transform
     const T_SH* obj2 = static_cast<const T_SH*>(o2);
 
     initialize(node, *obj1, tf1, *obj2, tf2, nsolver, request, result);
-    fcl::collide(&node);
+    fcl_capsule::collide(&node);
   }
 
   return result.numContacts();

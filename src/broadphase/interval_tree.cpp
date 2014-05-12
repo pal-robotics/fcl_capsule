@@ -39,7 +39,7 @@
 #include <cstdlib>
 
 
-namespace fcl
+namespace fcl_capsule
 {
 
 IntervalTreeNode::IntervalTreeNode(){}

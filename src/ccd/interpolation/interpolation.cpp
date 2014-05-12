@@ -36,7 +36,7 @@
 
 #include "fcl_capsule/ccd/interpolation/interpolation.h"
 
-namespace fcl 
+namespace fcl_capsule 
 {
 
 Interpolation::Interpolation() :

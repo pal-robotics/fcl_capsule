@@ -37,7 +37,7 @@
 #include "fcl_capsule/ccd/interpolation/interpolation_linear.h"
 #include "fcl_capsule/ccd/interpolation/interpolation_factory.h"
 
-namespace fcl 
+namespace fcl_capsule 
 {
 
 InterpolationType interpolation_linear_type = LINEAR;

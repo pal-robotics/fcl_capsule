@@ -40,7 +40,7 @@
 #include "fcl_capsule/octree.h"
 #endif
 
-namespace fcl
+namespace fcl_capsule
 {
 
 namespace details

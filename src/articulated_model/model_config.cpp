@@ -43,7 +43,7 @@
 #define BOOST_ASSERT_MSG(expr, msg) ((void)0)
 #endif
 
-namespace fcl
+namespace fcl_capsule
 {
 
 ModelConfig::ModelConfig() {}

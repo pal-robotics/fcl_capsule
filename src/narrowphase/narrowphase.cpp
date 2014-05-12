@@ -40,7 +40,7 @@
 #include <boost/math/constants/constants.hpp>
 #include <vector>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 namespace details

@@ -43,7 +43,7 @@
 
 #include "math.h"
 
-using namespace fcl;
+using namespace fcl_capsule;
 
 BOOST_AUTO_TEST_CASE(distance_capsulecapsule_origin)
 {

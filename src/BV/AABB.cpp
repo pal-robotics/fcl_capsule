@@ -39,7 +39,7 @@
 #include <limits>
 #include <iostream>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 AABB::AABB() : min_(std::numeric_limits<FCL_REAL>::max()),

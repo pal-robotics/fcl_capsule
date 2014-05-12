@@ -5,7 +5,7 @@
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <boost/math/constants/constants.hpp>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 /// The seed the user asked for (cannot be 0)

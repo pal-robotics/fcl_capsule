@@ -38,7 +38,7 @@
 #include <limits>
 #include <iostream>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 /// @brief Find the smaller and larger one of two values

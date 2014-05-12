@@ -43,7 +43,7 @@
 #include "fcl_capsule/collision.h"
 
 
-namespace fcl
+namespace fcl_capsule
 {
 
 

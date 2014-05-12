@@ -37,7 +37,7 @@
 
 #include "fcl_capsule/traversal/traversal_node_bvhs.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 namespace details

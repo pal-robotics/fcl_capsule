@@ -38,7 +38,7 @@
 #include "fcl_capsule/shape/geometric_shapes_utility.h"
 #include "fcl_capsule/BVH/BV_fitter.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 namespace details

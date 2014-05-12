@@ -38,7 +38,7 @@
 #include "fcl_capsule/profile.h"
 
 
-fcl::tools::Profiler& fcl::tools::Profiler::Instance(void)
+fcl_capsule::tools::Profiler& fcl_capsule::tools::Profiler::Instance(void)
 {
   static Profiler p(true, false);
   return p;
@@ -50,7 +50,7 @@ fcl::tools::Profiler& fcl::tools::Profiler::Instance(void)
 #include <algorithm>
 #include <sstream>
 
-void fcl::tools::Profiler::start(void)
+void fcl_capsule::tools::Profiler::start(void)
 {
   lock_.lock();
   if (!running_)
@@ -61,7 +61,7 @@ void fcl::tools::Profiler::start(void)
   lock_.unlock();
 }
 
-void fcl::tools::Profiler::stop(void)
+void fcl_capsule::tools::Profiler::stop(void)
 {
   lock_.lock();
   if (running_)
@@ -72,7 +72,7 @@ void fcl::tools::Profiler::stop(void)
   lock_.unlock();
 }
 
-void fcl::tools::Profiler::clear(void)
+void fcl_capsule::tools::Profiler::clear(void)
 {
   lock_.lock();
   data_.clear();
@@ -82,14 +82,14 @@ void fcl::tools::Profiler::clear(void)
   lock_.unlock();
 }
 
-void fcl::tools::Profiler::event(const std::string &name, const unsigned int times)
+void fcl_capsule::tools::Profiler::event(const std::string &name, const unsigned int times)
 {
   lock_.lock();
   data_[boost::this_thread::get_id()].events[name] += times;
   lock_.unlock();
 }
 
-void fcl::tools::Profiler::average(const std::string &name, const double value)
+void fcl_capsule::tools::Profiler::average(const std::string &name, const double value)
 {
   lock_.lock();
   AvgInfo &a = data_[boost::this_thread::get_id()].avg[name];
@@ -99,21 +99,21 @@ void fcl::tools::Profiler::average(const std::string &name, const double value)
   lock_.unlock();
 }
 
-void fcl::tools::Profiler::begin(const std::string &name)
+void fcl_capsule::tools::Profiler::begin(const std::string &name)
 {
   lock_.lock();
   data_[boost::this_thread::get_id()].time[name].set();
   lock_.unlock();
 }
 
-void fcl::tools::Profiler::end(const std::string &name)
+void fcl_capsule::tools::Profiler::end(const std::string &name)
 {
   lock_.lock();
   data_[boost::this_thread::get_id()].time[name].update();
   lock_.unlock();
 }
 
-void fcl::tools::Profiler::status(std::ostream &out, bool merge)
+void fcl_capsule::tools::Profiler::status(std::ostream &out, bool merge)
 {
   stop();
   lock_.lock();
@@ -159,7 +159,7 @@ void fcl::tools::Profiler::status(std::ostream &out, bool merge)
 
 
 /// @cond IGNORE
-namespace fcl
+namespace fcl_capsule
 {
 
 struct dataIntVal
@@ -192,7 +192,7 @@ struct SortDoubleByValue
 }
 /// @endcond
 
-void fcl::tools::Profiler::printThreadInfo(std::ostream &out, const PerThread &data)
+void fcl_capsule::tools::Profiler::printThreadInfo(std::ostream &out, const PerThread &data)
 {
   double total = time::seconds(tinfo_.total);
 

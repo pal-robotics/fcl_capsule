@@ -38,7 +38,7 @@
 #include "fcl_capsule/BVH/BVH_utility.h"
 #include <limits>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 

@@ -4,7 +4,7 @@
 #include "fcl_capsule/learning/classifier.h"
 #include <libsvm/svm.h>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 

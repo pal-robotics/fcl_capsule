@@ -38,7 +38,7 @@
 #include "fcl_capsule/math/transform.h"
 #include <boost/math/constants/constants.hpp>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 void Quaternion3f::fromRotation(const Matrix3f& R)
@@ -316,7 +316,7 @@ Quaternion3f& Quaternion3f::inverse()
 
 Vec3f Quaternion3f::transform(const Vec3f& v) const
 {
-  Quaternion3f r = (*this) * Quaternion3f(0, v[0], v[1], v[2]) * (fcl::conj(*this));
+  Quaternion3f r = (*this) * Quaternion3f(0, v[0], v[1], v[2]) * (fcl_capsule::conj(*this));
   return Vec3f(r.data[1], r.data[2], r.data[3]);
 }
 
@@ -428,14 +428,14 @@ Transform3f inverse(const Transform3f& tf)
 void relativeTransform(const Transform3f& tf1, const Transform3f& tf2,
                        Transform3f& tf)
 {
-  const Quaternion3f& q1_inv = fcl::conj(tf1.getQuatRotation());
+  const Quaternion3f& q1_inv = fcl_capsule::conj(tf1.getQuatRotation());
   tf = Transform3f(q1_inv * tf2.getQuatRotation(), q1_inv.transform(tf2.getTranslation() - tf1.getTranslation()));
 }
 
 void relativeTransform2(const Transform3f& tf1, const Transform3f& tf2,
                        Transform3f& tf)
 {
-  const Quaternion3f& q1inv = fcl::conj(tf1.getQuatRotation());
+  const Quaternion3f& q1inv = fcl_capsule::conj(tf1.getQuatRotation());
   const Quaternion3f& q2_q1inv = tf2.getQuatRotation() * q1inv;
   tf = Transform3f(q2_q1inv, tf2.getTranslation() - q2_q1inv.transform(tf1.getTranslation()));
 }

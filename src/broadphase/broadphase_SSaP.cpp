@@ -38,7 +38,7 @@
 #include <algorithm>
 #include <limits>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 /** \brief Functor sorting objects according to the AABB lower x bound */

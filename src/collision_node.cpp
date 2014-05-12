@@ -38,7 +38,7 @@
 #include "fcl_capsule/collision_node.h"
 #include "fcl_capsule/traversal/traversal_recurse.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 void collide(CollisionTraversalNodeBase* node, BVHFrontList* front_list)

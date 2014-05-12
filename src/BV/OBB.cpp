@@ -41,7 +41,7 @@
 #include <iostream>
 #include <limits>
 
-namespace fcl
+namespace fcl_capsule
 {
 
 /// @brief Compute the 8 vertices of a OBB

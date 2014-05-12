@@ -36,7 +36,7 @@
 
 #include "fcl_capsule/broadphase/broadphase_spatialhash.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 }

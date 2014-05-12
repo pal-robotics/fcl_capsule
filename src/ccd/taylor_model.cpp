@@ -41,7 +41,7 @@
 #include <boost/math/constants/constants.hpp>
 
 
-namespace fcl
+namespace fcl_capsule
 {
 
 TaylorModel::TaylorModel()

@@ -38,7 +38,7 @@
 #include "fcl_capsule/shape/geometric_shapes.h"
 #include "fcl_capsule/shape/geometric_shapes_utility.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 void Convex::fillEdges()

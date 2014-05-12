@@ -46,7 +46,7 @@
 #include "fcl_capsule_resources/config.h"
 #include <boost/filesystem.hpp>
 
-using namespace fcl;
+using namespace fcl_capsule;
 
 template<typename BV>
 bool collide_front_list_Test(const Transform3f& tf1, const Transform3f& tf2,

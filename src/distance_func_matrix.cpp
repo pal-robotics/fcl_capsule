@@ -40,7 +40,7 @@
 #include "fcl_capsule/traversal/traversal_node_setup.h"
 #include "fcl_capsule/narrowphase/narrowphase.h"
 
-namespace fcl
+namespace fcl_capsule
 {
 
 #if FCL_HAVE_OCTOMAP
@@ -155,7 +155,7 @@ struct BVHShapeDistancer
     const T_SH* obj2 = static_cast<const T_SH*>(o2);
 
     initialize(node, *obj1_tmp, tf1_tmp, *obj2, tf2, nsolver, request, result);
-    fcl::distance(&node);
+    fcl_capsule::distance(&node);
     
     delete obj1_tmp;
     return result.min_distance;
@@ -175,7 +175,7 @@ FCL_REAL orientedBVHShapeDistance(const CollisionGeometry* o1, const Transform3f
   const T_SH* obj2 = static_cast<const T_SH*>(o2);
 
   initialize(node, *obj1, tf1, *obj2, tf2, nsolver, request, result);
-  fcl::distance(&node);
+  fcl_capsule::distance(&node);
 
   return result.min_distance;  
 }
